@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yundao.reader.mapper.LoginMapper" >
+	
+
+	
+	<select id="findByBarcodeaAndSchoolId" parameterType="java.lang.String" resultType="com.yundao.reader.model.Reader">
+		select name,sex,barcode,password from Reader where barcode=#{barcode};
+	</select>
+	
+</mapper>
